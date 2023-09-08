@@ -1,0 +1,12 @@
+2023-09-08T16:55:43.790Zerror:uncaughtException: This is a custom error
+Error: This is a custom error
+    at C:\Users\Sergio\Desktop\logging-nodejs\app.js:28:11
+    at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:280:10)
+    at C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express-winston\index.js:429:9
+    at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)

@@ -1,0 +1,17 @@
+###
+GET http://localhost:3000
+
+
+###
+GET http://localhost:3000/nombres
+
+
+####
+
+GET http://localhost:3000/400
+
+###
+GET http://localhost:3000/500
+
+###
+GET http://localhost:3000/error
