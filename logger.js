@@ -5,11 +5,11 @@ const logger = createLogger({
         new transports.Console(),
         new transports.File({
             level: 'warn',
-            filename: 'logsWarnings.log'
+            filename: './logs/logsWarnings.log'
         }),
         new transports.File({
             level: 'error',
-            filename: 'logsErrors.log'
+            filename: './logs/logsErrors.log'
         }),
         new transports.MongoDB({
             db: process.env.MONGODB_URI,
@@ -17,7 +17,7 @@ const logger = createLogger({
         }),
         new transports.File({
             level: 'info',
-            filename: 'logsInfo.log'
+            filename: './logs/logsInfo.log'
         }),
     ],
     format: format.combine(

@@ -1,6 +1,6 @@
-2023-09-08T16:55:43.790Zerror:uncaughtException: This is a custom error
-Error: This is a custom error
-    at C:\Users\Sergio\Desktop\logging-nodejs\app.js:28:11
+2023-09-08T17:34:23.000Zerror:uncaughtException: Error personalizado
+Error: Error personalizado
+    at C:\Users\Sergio\Desktop\logging-nodejs\app.js:40:11
     at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
     at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:144:13)
     at Route.dispatch (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:114:3)

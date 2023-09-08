@@ -1,0 +1,1 @@
+Si tienes el plugin Rest Client instalado, se puede llamar a la api desde el fichero test.rest

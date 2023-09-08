@@ -12,6 +12,8 @@ app.use(expressWinston.logger({
     statusLevels: true
 }));
 
+
+
 app.get('/', (req, res) => {
     logger.info('This is an info log')
     res.sendStatus(200)
@@ -47,16 +49,14 @@ const myFormat = format.printf(({ level, meta, timestamp }) => {
 app.use(expressWinston.errorLogger({
     transports: [
         new transports.File({
-            filename: 'logsInternalErrors.log'
+            filename: './logs/logsInternalErrors.log'
         })
     ],
     format: format.combine(
         format.json(),
         format.timestamp(),
         myFormat
-
     )
-
 }))
 
 app.listen(3000);

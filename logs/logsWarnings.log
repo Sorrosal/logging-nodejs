@@ -1,4 +1,38 @@
 {
+  level: 'warn',
+  message: 'Log de advertencia',
+  metadata: { timestamp: '2023-09-08T17:34:20.654Z' }
+}
+{
+  level: 'warn',
+  message: 'HTTP GET /400',
+  metadata: {
+    meta: {
+      req: {
+        url: '/400',
+        headers: {
+          'user-agent': 'vscode-restclient',
+          'accept-encoding': 'gzip, deflate',
+          host: 'localhost:3000',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/400',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 2
+    },
+    timestamp: '2023-09-08T17:34:20.656Z'
+  }
+}
+{
+  level: 'error',
+  message: 'Log de error',
+  metadata: { timestamp: '2023-09-08T17:34:22.154Z' }
+}
+{
   level: 'error',
   message: 'HTTP GET /500',
   metadata: {
@@ -17,9 +51,9 @@
         query: {}
       },
       res: { statusCode: 500 },
-      responseTime: 0
+      responseTime: 2
     },
-    timestamp: '2023-09-08T16:55:42.964Z'
+    timestamp: '2023-09-08T17:34:22.156Z'
   }
 }
 {
@@ -43,59 +77,6 @@
       res: { statusCode: 500 },
       responseTime: 5
     },
-    timestamp: '2023-09-08T16:55:43.792Z'
-  }
-}
-{
-  level: 'error',
-  message: 'HTTP GET /500',
-  metadata: {
-    meta: {
-      req: {
-        url: '/500',
-        headers: {
-          'user-agent': 'vscode-restclient',
-          'accept-encoding': 'gzip, deflate',
-          host: 'localhost:3000',
-          connection: 'close'
-        },
-        method: 'GET',
-        httpVersion: '1.1',
-        originalUrl: '/500',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 0
-    },
-    timestamp: '2023-09-08T17:00:21.175Z'
-  }
-}
-{
-  level: 'error',
-  message: 'Log de error',
-  metadata: { timestamp: '2023-09-08T17:08:35.619Z' }
-}
-{
-  level: 'error',
-  message: 'HTTP GET /500',
-  metadata: {
-    meta: {
-      req: {
-        url: '/500',
-        headers: {
-          'user-agent': 'vscode-restclient',
-          'accept-encoding': 'gzip, deflate',
-          host: 'localhost:3000',
-          connection: 'close'
-        },
-        method: 'GET',
-        httpVersion: '1.1',
-        originalUrl: '/500',
-        query: {}
-      },
-      res: { statusCode: 500 },
-      responseTime: 5
-    },
-    timestamp: '2023-09-08T17:08:35.628Z'
+    timestamp: '2023-09-08T17:34:23.003Z'
   }
 }
