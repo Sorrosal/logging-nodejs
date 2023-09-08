@@ -10,3 +10,15 @@ Error: Error personalizado
     at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:280:10)
     at C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express-winston\index.js:429:9
     at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
+2023-09-08T18:53:25.350Zerror:uncaughtException: Error personalizado
+Error: Error personalizado
+    at C:\Users\Sergio\Desktop\logging-nodejs\routes\api.js:32:11
+    at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\Sergio\Desktop\logging-nodejs\node_modules\express\lib\router\index.js:47:12)

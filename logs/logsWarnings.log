@@ -80,3 +80,13 @@
     timestamp: '2023-09-08T17:34:23.003Z'
   }
 }
+{
+  level: 'warn',
+  message: 'Log de advertencia',
+  metadata: { timestamp: '2023-09-08T18:53:23.608Z' }
+}
+{
+  level: 'error',
+  message: 'Log de error',
+  metadata: { timestamp: '2023-09-08T18:53:24.291Z' }
+}

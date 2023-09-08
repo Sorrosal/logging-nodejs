@@ -138,3 +138,52 @@
     timestamp: '2023-09-08T17:34:23.003Z'
   }
 }
+{
+  level: 'info',
+  message: 'LLamada al metodo /',
+  metadata: { timestamp: '2023-09-08T18:31:37.290Z' }
+}
+{
+  level: 'info',
+  message: 'HTTP GET /',
+  metadata: {
+    meta: {
+      req: {
+        url: '/',
+        headers: {
+          'user-agent': 'vscode-restclient',
+          'accept-encoding': 'gzip, deflate',
+          host: 'localhost:3000',
+          connection: 'close'
+        },
+        method: 'GET',
+        httpVersion: '1.1',
+        originalUrl: '/',
+        query: {}
+      },
+      res: { statusCode: 200 },
+      responseTime: 6
+    },
+    timestamp: '2023-09-08T18:31:37.298Z'
+  }
+}
+{
+  level: 'info',
+  message: 'LLamada al metodo /',
+  metadata: { timestamp: '2023-09-08T18:53:20.462Z' }
+}
+{
+  level: 'info',
+  message: 'Se ha llamado al endpoint /nombres y ha devuelto Sergio,Hector,Ramon',
+  metadata: { timestamp: '2023-09-08T18:53:22.213Z' }
+}
+{
+  level: 'warn',
+  message: 'Log de advertencia',
+  metadata: { timestamp: '2023-09-08T18:53:23.608Z' }
+}
+{
+  level: 'error',
+  message: 'Log de error',
+  metadata: { timestamp: '2023-09-08T18:53:24.291Z' }
+}

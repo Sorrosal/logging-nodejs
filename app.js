@@ -6,45 +6,24 @@ const app = express();
 const expressWinston = require('express-winston');
 const { transports, format } = require('winston');
 const logger = require('./logger');
+const service = require("./services/services");
+
+
+setInterval(function () {
+    console.log("Hola, soy el servicio de heartbeat y me ejecuto cada 5 segundos, aquí checkearia los servicios, guardaría logs en ficheros, base de datos y enviaría notificación por websockets");
+    const status = service.checkServices();
+    if (status) console.log("Todos servicios están perfectamente");
+}, 5000);
+
+const myFormat = format.printf(({ level, meta, timestamp }) => {
+    return `${timestamp}${level}:${meta.message}`;
+});
+app.use('/', require("./routes/api"));
 
 app.use(expressWinston.logger({
     winstonInstance: logger,
     statusLevels: true
 }));
-
-
-
-app.get('/', (req, res) => {
-    logger.info('This is an info log')
-    res.sendStatus(200)
-});
-
-app.get('/nombres', (req, res) => {
-    const nombres = ['Sergio,Hector,Ramon'];
-    logger.info('Se ha llamado al endpoint /nombres y ha devuelto ' + nombres)
-    res.status(200).send({
-        "status": "success",
-        "nombres": nombres
-    });
-});
-
-app.get('/400', (req, res) => {
-    logger.warn('Log de advertencia')
-    res.sendStatus(400)
-});
-
-app.get('/500', (req, res) => {
-    logger.error('Log de error')
-    res.sendStatus(500)
-});
-
-app.get('/error', (req, res) => {
-    throw new Error("Error personalizado")
-});
-
-const myFormat = format.printf(({ level, meta, timestamp }) => {
-    return `${timestamp}${level}:${meta.message}`;
-});
 
 app.use(expressWinston.errorLogger({
     transports: [
@@ -57,6 +36,6 @@ app.use(expressWinston.errorLogger({
         format.timestamp(),
         myFormat
     )
-}))
+}));
 
 app.listen(3000);

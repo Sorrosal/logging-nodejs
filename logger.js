@@ -26,6 +26,6 @@ const logger = createLogger({
         format.metadata(),
         format.prettyPrint()
     )
-})
+});
 
 module.exports = logger;
